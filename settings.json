@@ -1,0 +1,42 @@
+{
+  "active_profile": "default",
+  "profiles": {
+    "default": {
+      "RTSP_URL": "rtsp://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CAMERA_IP:554/stream",
+      "TELEGRAM_TOKEN": "YOUR_TELEGRAM_BOT_TOKEN",
+      "CHAT_ID_1": "YOUR_PRIMARY_CHAT_ID",
+      "CHAT_ID_2": "",
+      
+      "YOLO_CONFIG": {
+        "MODEL_FILE": "yolo11n.onnx",
+        "CONFIDENCE": 0.30,
+        "SCAN_FPS": 3.0,
+        "COOLDOWN_SECONDS": 3,
+        "MIN_PIXELS_AREA": 2000,
+        "MAX_PIXELS_AREA": 400000
+      },
+      
+      "IMAGE_ENHANCEMENT": {
+        "BILATERAL_SIGMA_COLOR": 75,
+        "BILATERAL_SIGMA_SPACE": 75,
+        "CLAHE_CLIP_LIMIT": 3.0
+      },
+      
+      "CROP_SETTINGS": {
+        "SIZE": 640
+      },
+      
+      "CRITICAL_ZONES": [
+        {
+          "name": "Wall_Fence_Zone",
+          "points": [
+            [100, 200],
+            [800, 200],
+            [800, 450],
+            [100, 450]
+          ]
+        }
+      ]
+    }
+  }
+}
