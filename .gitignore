@@ -1,0 +1,13 @@
+# Ignore local settings and credentials
+settings.json
+
+# Ignore captured images and logs
+captures/
+logs/
+
+# Ignore heavy AI models
+ai_model/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
