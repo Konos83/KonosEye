@@ -1,5 +1,5 @@
 """
-SecureGuard - Enterprise-Grade RTSP Camera NVR Pipeline
+KonosEye - Enterprise-Grade RTSP Camera NVR Pipeline
 Features:
 - Hardware Accelerated YOLO11 via AMD DirectML / ONNXRuntime
 - Non-Maximum Suppression (NMS) for accurate counting
@@ -27,7 +27,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 # --- LOGGING SETUP ---
 def setup_logger():
-    logger = logging.getLogger('SecureGuard')
+    logger = logging.getLogger('KonosEye')
     logger.setLevel(logging.DEBUG)
     
     handler = logging.StreamHandler()
